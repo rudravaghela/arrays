@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>C78</title>
+    </head>
+
+<body>
+    <p>HOW TO DECLARE AN ARRAY</p>
+    <h1 id="declare-an-array"></h1>
+    <hr>
+    <p>what is the first element</p>
+<h1 id="first_element"></h1>
+<hr>
+<p>what is the second element</p>
+<h1 id="second_element"></h1>
+<hr>
+<p>what is the third element</p>
+<h1 id="third_element"></h1>
+<hr>
+<p>what is thge length of the array</p>
+<h1 id="length"></h1>
+<hr>
+<p>looping an array</p>
+<h1 id="looping"></h1>
+<hr>
+<p>how to add element at the end of the array</p>
+<h1 id="adding_element"></h1>
+    <script>
+var fruits=["kiwi" ,"banana" ,"lemon"];
+console.log(fruits);
+document.getElementById("declare-an-array").innerHTML=fruits;
+
+var first_fruit=fruits[0];
+console.log(first_fruit);
+document.getElementById("first_element").innerHTML=first_fruit;
+
+var second_fruit=fruits[1];
+console.log(second_fruit);
+document.getElementById("second_element").innerHTML=second_fruit;
+
+var third_fruit=fruits[2];
+console.log(third_fruit);
+document.getElementById("third_element").innerHTML=third_fruit;
+
+var length=fruits.length;
+console.log(length);
+document.getElementById("length").innerHTML=length;
+
+var array_value="";
+for(i=0;i<fruits.length;i++)
+{
+console.log(fruits[i]);
+array_value=array_value+fruits[i]+"<br>";
+}
+document.getElementById("looping").innerHTML=array_value;+
+
+fruits.push("orange");
+console.log(fruits);
+document.getElementById("adding_element").innerHTML=fruits;
+
+
+
+
+
+    </script>
+</body>
+</html>
